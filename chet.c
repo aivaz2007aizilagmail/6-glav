@@ -2,9 +2,14 @@
 
 int main() {
     int number;
+
     printf("Введите целое число: ");
     scanf("%d", &number);
+    
+    //0 - нечётное, 1 - чётное
     int is_even = (number % 2 == 0);
-    printf("Число %d является %s\n", number, is_even ? "четным" : "нечетным");
+    
+    printf("%d\n", is_even);
+
     return 0;
 }
